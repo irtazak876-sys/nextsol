@@ -5,7 +5,7 @@ const CTA = () => {
   return (
     <section className="py-16 relative overflow-hidden bg-white">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-sky-600 rounded-[64px] p-16 md:p-32 text-center overflow-hidden relative shadow-2xl shadow-sky-600/20">
+        <div className="bg-sky-600 rounded-[32px] sm:rounded-[64px] p-8 sm:p-16 md:p-32 text-center overflow-hidden relative shadow-2xl shadow-sky-600/20">
           {/* Dynamic Background Elements */}
           <div className="absolute inset-0 opacity-20 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] pointer-events-none" />
           <div className="absolute -top-20 -right-20 w-80 h-80 bg-white/10 blur-[80px] rounded-full" />
@@ -25,11 +25,11 @@ const CTA = () => {
               The Next Evolution
             </motion.div>
             
-            <h2 className="text-5xl md:text-[80px] font-black font-outfit text-white mb-12 leading-[0.92] tracking-tight uppercase">
+            <h2 className="text-3xl sm:text-5xl md:text-[80px] font-black font-outfit text-white mb-12 leading-[0.92] tracking-tight uppercase">
               Ready to Own the <br/><span className="text-amber-400">Digital Realm?</span>
             </h2>
             
-            <p className="text-sky-50 text-xl md:text-2xl mb-16 max-w-2xl mx-auto leading-relaxed font-medium">
+            <p className="text-sky-50 text-lg sm:text-xl md:text-2xl mb-16 max-w-2xl mx-auto leading-relaxed font-medium">
               We are currently selecting only two more high-impact projects for the upcoming quarter. Secure your technical partnership today.
             </p>
             

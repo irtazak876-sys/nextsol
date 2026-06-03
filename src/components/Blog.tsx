@@ -29,7 +29,7 @@ const Blog = () => {
   return (
     <section className="py-16 bg-white border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+        <div className="flex flex-col md:flex-row justify-between md:items-end mb-12 lg:mb-24 gap-6">
           <div className="max-w-2xl">
             <motion.div
               initial={{ opacity: 0 }}

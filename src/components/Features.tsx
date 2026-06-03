@@ -39,9 +39,9 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="py-16 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-24">
+        <div className="text-center mb-12 lg:mb-24">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -55,7 +55,7 @@ const Features = () => {
           </h2>
         </div>
 
-        <div className="space-y-40">
+        <div className="space-y-20 lg:space-y-40">
           {features.map((feature, i) => (
             <motion.div 
               key={i}
@@ -63,7 +63,7 @@ const Features = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
-              className={`flex flex-col ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-24`}
+              className={`flex flex-col ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12 lg:gap-24`}
             >
               <div className="flex-1">
                 <div className="w-20 h-20 bg-white border border-slate-100 rounded-[24px] flex items-center justify-center text-sky-600 mb-10 shadow-2xl relative group/icon overflow-hidden">
@@ -102,7 +102,7 @@ const Features = () => {
                    <img 
                     src={feature.image} 
                     alt={feature.title} 
-                    className="w-full h-[500px] object-cover transition-transform duration-[1.5s] group-hover:scale-110"
+                    className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover transition-transform duration-[1.5s] group-hover:scale-110"
                   />
                 </div>
               </div>

@@ -57,7 +57,7 @@ const Process = () => {
                   {step.number}
                   <div className="absolute inset-2 rounded-full border border-sky-500/10 animate-spin-slow" />
                 </div>
-                <h3 className="text-section-h3 text-slate-900 mb-4 uppercase font-black">{step.title}</h3>
+                <h3 className="text-section-h3 text-slate-900 mb-4 uppercase font-black text-center md:text-left">{step.title}</h3>
                 <p className="text-slate-500 text-body-md text-center md:text-left font-medium">
                   {step.desc}
                 </p>

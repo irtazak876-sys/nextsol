@@ -52,7 +52,7 @@ const Services = () => {
   return (
     <section id="services" className="py-16 bg-slate-50 relative border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-end justify-between mb-24 gap-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-24 gap-8">
           <div className="max-w-2xl">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -91,7 +91,7 @@ const Services = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.7, delay: i * 0.05, ease: [0.23, 1, 0.32, 1] }}
               whileHover={{ y: -10 }}
-              className="group relative bg-white border border-slate-100 p-10 rounded-[32px] hover:shadow-[0_40px_80px_-20px_rgba(14,165,233,0.15)] transition-all overflow-hidden"
+              className="group relative bg-white border border-slate-100 p-6 sm:p-10 rounded-[32px] hover:shadow-[0_40px_80px_-20px_rgba(14,165,233,0.15)] transition-all overflow-hidden"
             >
               <div className={`absolute -inset-2 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-[0.03] transition-opacity`} />
               

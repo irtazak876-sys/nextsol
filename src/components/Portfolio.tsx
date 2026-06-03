@@ -36,7 +36,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="py-16 bg-white text-slate-900 border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+        <div className="flex flex-col md:flex-row justify-between md:items-end mb-12 lg:mb-24 gap-8">
           <div className="max-w-2xl">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -49,8 +49,8 @@ const Portfolio = () => {
             </motion.div>
             <h2 className="text-section-h2 text-slate-900 font-outfit leading-[0.95] tracking-tight font-black uppercase">Selected <br/><span className="text-sky-500">Works.</span></h2>
           </div>
-          <div className="flex flex-col items-end">
-             <p className="text-slate-500 text-body-lg mb-8 max-w-sm text-right font-medium">
+          <div className="flex flex-col items-start md:items-end">
+             <p className="text-slate-500 text-body-lg mb-8 max-w-sm text-left md:text-right font-medium">
               We focus on high-impact projects that define industry standards and drive massive growth.
             </p>
             <button className="group flex items-center gap-3 px-10 py-5 bg-sky-600 text-white rounded-2xl hover:bg-sky-700 transition-all font-black text-micro shadow-xl shadow-sky-600/20 active:scale-95">
@@ -67,7 +67,7 @@ const Portfolio = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, delay: i * 0.1, ease: [0.23, 1, 0.32, 1] }}
-              className={`group relative overflow-hidden rounded-[40px] shadow-2xl border border-slate-100 ${project.size === 'lg' ? 'md:col-span-4' : 'md:col-span-2'} aspect-[16/12] md:aspect-auto h-[400px] md:h-[600px] cursor-pointer bg-slate-50`}
+              className={`group relative overflow-hidden rounded-[40px] shadow-2xl border border-slate-100 ${project.size === 'lg' ? 'md:col-span-4' : 'md:col-span-2'} aspect-[16/12] md:aspect-auto h-[300px] sm:h-[400px] md:h-[600px] cursor-pointer bg-slate-50`}
             >
               <img 
                 src={project.image} 

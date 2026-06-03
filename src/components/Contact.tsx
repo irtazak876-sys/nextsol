@@ -3,7 +3,7 @@ import { Mail, Phone, Send } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-32 bg-white relative overflow-hidden border-t border-slate-100">
+    <section id="contact" className="py-16 lg:py-32 bg-white relative overflow-hidden border-t border-slate-100">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-sky-50 blur-[120px] rounded-full pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -32,7 +32,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-micro font-black text-slate-400 mb-1 uppercase">Electronic Mail</div>
-                  <div className="text-section-h3 text-slate-900 font-outfit lowercase tracking-tighter">partners@nextsol.pk</div>
+                  <div className="text-section-h3 text-slate-900 font-outfit lowercase tracking-tighter break-all sm:break-normal">partners@nextsol.pk</div>
                 </div>
               </div>
               <div className="flex items-center gap-6 group cursor-pointer">
@@ -51,7 +51,7 @@ const Contact = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="bg-white p-10 md:p-16 rounded-[48px] border border-slate-200 shadow-2xl shadow-blue-900/5"
+            className="bg-white p-6 sm:p-10 md:p-16 rounded-[48px] border border-slate-200 shadow-2xl shadow-blue-900/5"
           >
             <form className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

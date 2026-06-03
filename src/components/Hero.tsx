@@ -21,7 +21,7 @@ const Hero = () => {
           alt="Technical Mastery"
         />
         <div className="absolute inset-0 bg-white/20 backdrop-blur-[1px]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white/70 lg:bg-gradient-to-r lg:from-white lg:via-white/80 lg:to-transparent" />
       </motion.div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-20">
@@ -77,7 +77,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
-          className="mt-32 pt-16 grid grid-cols-2 md:grid-cols-4 gap-12 border-t border-slate-100"
+          className="mt-16 lg:mt-32 pt-8 lg:pt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 border-t border-slate-100"
         >
           {[
             { label: 'Founded', value: '2004', icon: Globe, color: '#38bdf8' },
