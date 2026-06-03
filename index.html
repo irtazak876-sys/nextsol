@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <title>NextSol | Immersive Digital Engineering</title>
+    <style>
+      :root {
+        --bg-primary: #ffffff;
+        --bg-surface: #f8fafc;
+        --sea-blue: #0ea5e9;
+        --yellow-bright: #fbbf24;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Outfit', sans-serif;
+        background-color: var(--bg-primary);
+        color: #0f172a;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      .font-outfit { font-family: 'Outfit', sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+      
+      /* Strict Type Scale from Spec */
+      .text-hero-xl { font-size: clamp(72px, 10vw, 100px); font-weight: 900; line-height: 0.9; letter-spacing: -0.03em; }
+      .text-hero-lg { font-size: clamp(56px, 7vw, 80px); font-weight: 900; line-height: 0.92; letter-spacing: -0.025em; }
+      .text-section-h2 { font-size: clamp(40px, 6vw, 72px); font-weight: 900; line-height: 1.0; letter-spacing: -0.02em; }
+      .text-section-h3 { font-size: clamp(24px, 3vw, 32px); font-weight: 700; line-height: 1.1; letter-spacing: -0.01em; }
+      .text-card-title { font-size: 22px; font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
+      .text-body-lg { font-size: 20px; font-weight: 500; line-height: 1.7; }
+      .text-body-md { font-size: 17px; font-weight: 400; line-height: 1.7; }
+      .text-label { font-size: 11px; font-weight: 800; line-height: 1.4; letter-spacing: 0.22em; text-transform: uppercase; }
+      .text-micro { font-size: 10px; font-weight: 800; line-height: 1.4; letter-spacing: 0.25em; text-transform: uppercase; }
+
+      @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .animate-spin-slow {
+        animation: spin-slow 8s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
